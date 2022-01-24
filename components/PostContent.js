@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
+import { NotionRenderer } from "react-notion";
+import "react-notion/src/styles.css";
+import "prismjs/themes/prism-tomorrow.css";
 
 // UI component for main post content
 export default function PostContent({ post }) {
@@ -15,7 +18,8 @@ export default function PostContent({ post }) {
         </Link>{' '}
         on {createdAt.toISOString()}
       </span>
-      <ReactMarkdown>{post?.content}</ReactMarkdown>
+      {/* <ReactMarkdown>{post?.content}</ReactMarkdown> */}
+      <NotionRenderer blockMap={ JSON.parse(post?.content)} />
     </div>
   );
 }
