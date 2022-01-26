@@ -59,7 +59,7 @@ export default function Navbar() {
         {!username && (
        
              <button class="bg-lblue p-1 rounded-full text-gray-400 ">
-         <a href="/enter" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Log in</a>
+         <a href="/enter" class="text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold">Log in</a>
         </button>
            
        
