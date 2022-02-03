@@ -16,7 +16,7 @@ export default function Navbar() {
 
               <div className=" flex-shrink-0 flex items-center cursor-pointer">
                 <Link href="/">
-                  <img class="h-12 w-auto" src="/homelogo.png" alt="Workflow" />
+                  <img className="h-12 w-auto" src="/homelogo.png" alt="Workflow" />
                   
                 </Link>
               </div>
@@ -29,15 +29,15 @@ export default function Navbar() {
         {/* user is signed-in and has username */}
         {username && (
           <>
-      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <button class="bg-lblue p-1 rounded-full text-gray-400 ">
-         <a href="/admin" class="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">+ NEW POST</a>
+      <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button className="bg-lblue p-1 rounded-full text-gray-400 ">
+         <a href="/admin" className="text-gray-900 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">+ NEW POST</a>
         </button>
 
-        <div class="ml-3 relative cursor-pointer">
+        <div className="ml-3 relative cursor-pointer">
           
-            <Link href={`/${username}`} class="bg-lblue flex text-sm rounded-full " id="user-menu" aria-expanded="false" aria-haspopup="true">
-              <img class="h-12 w-12 rounded-full" src={user?.photoURL} alt="" />
+            <Link href={`/${username}`} className="bg-lblue flex text-sm rounded-full " id="user-menu" aria-expanded="false" aria-haspopup="true">
+              <img className="h-12 w-12 rounded-full" src={user?.photoURL} alt="" />
             </Link>
         
         </div>
@@ -58,8 +58,8 @@ export default function Navbar() {
         {/* user is not signed OR has not created username */}
         {!username && (
        
-             <button class="bg-lblue p-1 rounded-full text-gray-400 ">
-         <a href="/enter" class="text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold">Log in</a>
+             <button className="bg-lblue p-1 rounded-full text-gray-400 ">
+         <a href="/enter" className="text-gray-800 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold">Log in</a>
         </button>
            
        
@@ -70,26 +70,26 @@ export default function Navbar() {
    
     </nav>
 
-//       <div class="">
-//         <div class="">
-//           <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow" />
-//           <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow" />
+//       <div className="">
+//         <div className="">
+//           <img className="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow" />
+//           <img className="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow" />
 //         </div>
        
 //       </div>
-//       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-//         <button class="bg-lblue p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-lblue focus:ring-white">
-//           <span class="sr-only">View notifications</span>
+//       <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+//         <button className="bg-lblue p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-lblue focus:ring-white">
+//           <span className="sr-only">View notifications</span>
 
-//          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+//          <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
 //         </button>
 
    
-//         <div class="ml-3 relative">
+//         <div className="ml-3 relative">
 //           <div>
-//             <button type="button" class="bg-lblue flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-lblue focus:ring-white" id="user-menu" aria-expanded="false" aria-haspopup="true">
-//               <span class="sr-only">Open user menu</span>
-//               <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+//             <button type="button" className="bg-lblue flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-lblue focus:ring-white" id="user-menu" aria-expanded="false" aria-haspopup="true">
+//               <span className="sr-only">Open user menu</span>
+//               <img className="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
 //             </button>
 //           </div>
 //         </div>

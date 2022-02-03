@@ -59,7 +59,7 @@ export default function Home(props) {
 		<main>
 			<Metatags
 				title="Home Page"
-				description="Get the latest posts on our site"
+				description="Get the latest posts on our blog"
 			/>
 
 			<PostFeed posts={posts} />
@@ -67,7 +67,7 @@ export default function Home(props) {
 			{!loading && !postsEnd && (
 				<button
 					onClick={getMorePosts}
-					class="py-2 px-4 bg-transparent text-blue-600 font-semibold border border-blue-600 rounded hover:bg-white hover:text-blue-600 hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
+					className="py-2 px-4 bg-transparent text-blue-600 font-semibold border border-blue-600 rounded hover:bg-white hover:text-blue-600 hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
 				>
 					Load more..
 				</button>

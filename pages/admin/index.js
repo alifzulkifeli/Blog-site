@@ -15,8 +15,8 @@ export default function AdminPostsPage(props) {
   return (
     <main>
       <AuthCheck>
-        <PostList />
         <CreateNewPost />
+        <PostList /> 
       </AuthCheck>
     </main>
   );
@@ -31,7 +31,7 @@ function PostList() {
 
   return (
     <>
-      <h1>Manage your Posts</h1>
+      <h1 className="mt-6" >Manage your Posts</h1>
       <PostFeed posts={posts} admin />
     </>
   );
@@ -83,9 +83,7 @@ function CreateNewPost() {
         placeholder="My Awesome Article!"
         className={styles.input}
       />
-      <p>
-        <strong>Slug:</strong> {slug}
-      </p>
+    
       <button type="submit" disabled={!isValid} className="btn-green">
         Create New Post
       </button>

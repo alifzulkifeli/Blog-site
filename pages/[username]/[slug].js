@@ -23,7 +23,6 @@ export async function getStaticProps({ params }) {
 
     path = postRef.path;
   }
-
   return {
     props: { post, path },
     revalidate: 100,
@@ -40,6 +39,8 @@ export async function getStaticPaths() {
       params: { username, slug },
     };
   });
+
+  
 
   return {
     // must be in this format:
